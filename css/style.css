@@ -1,0 +1,277 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--content);
+}
+
+:root{
+	--color-negro:#2D2D2D;
+	--colo-contenido:#898989;
+	--color-verde:#72b529;
+	--fondo-gris:#FAFAFA;
+	--fondo-clients:#F7F7F7;
+	--fondo-footer:#2c2e2e;
+	--color-footer:#888888;
+	--menu-hover:#2293D7;
+}
+header{
+	background-color: #fff;
+	padding: 20px 0;
+}
+footer{
+	background-color: var(--fondo-footer);
+	color: var(--color-footer);
+	padding: 20px 0;
+	text-align: center;
+	font-size: 13px;
+}
+
+
+#cta{
+	background-color: #72b529;
+	color: #FFF;
+	padding: 50px 0;
+	text-align: center;
+}
+#cta h2{
+	display: inline;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-right: 20px;
+	margin-bottom: 0;
+  	vertical-align: middle;
+}
+#cta .btn{
+	font-size: 13px;
+	border-width: 2px;
+  	border-color: #ffffff;
+	background-color: transparent;
+	padding: 10px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  --black: #222222;
+  --content: #898989;
+  --green: #72b529;
+  --gray-bg: #FAFAFA;
+  --clients-bg: #F7F7F7;
+  --footer-bg: #2c2e2e;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+}
+
+.btn-primary {
+  background: var(--green);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("/img/hero_oshine_v6.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  max-width: 600px;
+  text-align: left;
+
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  color: white;
+}
+
+.hero-content h1 span {
+  color: var(--green);
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.about {
+  background: var(--gray-bg);
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.about h2 span {
+  color: var(--green);
+}
+
+.about-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.results {
+  padding: 80px 10%;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.results-image {
+  height: 300px;
+  background: url("/img/agency-corp.jpeg") center/cover no-repeat;
+}
+
+.clients {
+  background: var(--clients-bg);
+  padding: 50px 10%;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.testimonial {
+  background: url("/img/oshine-testi.jpeg") center/cover no-repeat;
+  padding: 100px 10%;
+  color: white;
+  text-align: left;
+}
+
+.testimonial-content {
+  max-width: 600px;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.info-image {
+  padding: 60px 10%;
+  background: white;
+}
+
+
+.info-img img {
+  width: 50%;
+  display: block;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info-item img {
+  width: 26px;
+}
+
+.info-item h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.services {
+  padding: 80px 10%;
+  background: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.service img {
+  width: 34px;
+  margin-bottom: 15px;
+}
+
+.service h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.service p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.info-item i,
+.service i {
+  font-size: 32px;
+  color: var(--green);
+  margin-top: 5px;
+}
+
+.info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
